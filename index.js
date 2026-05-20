@@ -1,6 +1,7 @@
 
 let humanScore = 0
 let computerScore = 0
+const containerBtn = document.querySelector('#container-btn')
 
 function getComputerChoice() {
     const possibilities = ['rock', 'paper', 'scissor']
@@ -42,13 +43,28 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-function playGame() {
-    for (let i = 0; i < 5; i++){
-        playRound(getHumanChoice(), getComputerChoice())
-    }
-    console.log('===== FINAL RESULTS =====')
-    console.log(`You: ${humanScore} points`)
-    console.log(`Computer: ${computerScore} points`)
-}
+containerBtn.addEventListener('click', e => {
+    const computerChoice = getComputerChoice()
+    switch (e.target.id) {
+        case 'rock':
+            playRound('rock', computerChoice)
+            break
+        case 'paper':
+            playRound('papper', computerChoice)
+            break
+        case 'scissor':
+            playRound('scissor', computerChoice)
+            break
+    }  
+})
 
-playGame()
+// function playGame() {
+//     for (let i = 0; i < 5; i++){
+//         playRound(getHumanChoice(), getComputerChoice())
+//     }
+//     console.log('===== FINAL RESULTS =====')
+//     console.log(`You: ${humanScore} points`)
+//     console.log(`Computer: ${computerScore} points`)
+// }
+
+// playGame()
