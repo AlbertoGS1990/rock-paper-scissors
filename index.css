@@ -1,3 +1,7 @@
+body {
+	background-color: rgb(13, 71, 63);
+}
+
 #container-btn {
 	display: flex;
 	justify-content: center;
@@ -8,6 +12,46 @@
 button {
 	padding: 10px 20px;
 	font-size: 20px;
-	background-color: aquamarine;
+	background-color: rgb(165, 235, 211);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#container-results {
+	background-color: rgb(255, 255, 255);
+	color: rgb(13, 71, 63);
+	padding: 20px;
+	margin: 20px 10px 0 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+#container-partial-result {
+	text-align: center;
+}
+
+#para-partial-result {
+	color: rgb(34, 34, 234);
+}
+
+.hidden {
+	display: none;
+}
+
+#para-human-choosen,
+#para-computer-choosen {
+	color: rgb(76, 160, 248);
+	font-size: 16px;
+}
+
+#container-winner {
+	background-color: white;
+	color: red;
+	padding: 10px 20px;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 20px 10px 0 10px;
 	font-weight: bold;
 }
