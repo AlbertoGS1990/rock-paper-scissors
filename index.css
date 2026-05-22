@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(13, 71, 63);
+	height: 100vh;
 }
 
 #container-btn {
@@ -29,6 +30,7 @@ button {
 
 #container-partial-result {
 	text-align: center;
+	background-color: white;
 }
 
 #para-partial-result {
